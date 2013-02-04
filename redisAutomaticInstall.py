@@ -359,7 +359,6 @@ if __name__ == '__main__':
 		INSTALL_VERSION_PORT['VERSION_NUM'] =input("please enter the version number(format like X.X.X):")
 		INSTALL_VERSION_PORT['PORT_NUM']     =input("please enter the port :")
 
-
 	notice("the log file will write under /home .\nyou must give current user write permission:\n")
 	CMD_CHMOD_HOMEDIR_W ="sudo chmod o+w /home"
 	process =subprocess.Popen(CMD_CHMOD_HOMEDIR_W, shell=True, universal_newlines=True, stdout=subprocess.PIPE)
