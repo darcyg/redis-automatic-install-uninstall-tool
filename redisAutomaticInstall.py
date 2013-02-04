@@ -19,13 +19,13 @@ INSTALL_VERSION_PORT = \
 
 PRE_PROCESSING_EXPRESSION = \
 (
-	('^VAR/',					'/var/'),
-	('^ETC/',					'/etc/'),
-	('^VAR_LOG/',				'/var/log/'),
-	('^VAR_RUN/',				'/var/run/'),
-	('^USR/',					'/usr/'),
-	('^USR_LOCAL/',				'/usr/local/'),
-	('^USR_LOCAL_BIN/',			'/usr/local/bin/')
+	('^VAR/'				,	'/var/'),
+	('^ETC/'				,	'/etc/'),
+	('^VAR_LOG/'			,	'/var/log/'),
+	('^VAR_RUN/'			,	'/var/run/'),
+	('^USR/'				,	'/usr/'),
+	('^USR_LOCAL/'			,	'/usr/local/'),
+	('^USR_LOCAL_BIN/'		,	'/usr/local/bin/')
 )
 
 PRE_PROCESSING_PATHS = {
