@@ -21,4 +21,5 @@ And you may provide sereval params (if you choose customize mode) which list as:
 
 <h1>Contact</h1>
 <a href="mailto:yanghua1127@gmail.com">yanghua1127@gmail.com</a>
-<h3>My blog:</h3><a href="http://blog.csdn.net/yanghua_kobe"></a>
+<h3>My blog:</h3><a href="http://blog.csdn.net/yanghua_kobe">http://blog.csdn.net/yanghua_kobe</a>
+<h3>Have fun!</h3>
