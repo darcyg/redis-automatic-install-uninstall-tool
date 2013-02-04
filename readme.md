@@ -12,3 +12,13 @@ here is some promise that you must be provide:
 And you may provide sereval params (if you choose customize mode) which list as:
 <h3>(1) version num: the version number which you want to download(2.6.9 as a default)</h3>
 <h3>(2) port: the port which you wish the redis-server run at(6379 as a default)</h3>
+
+<h1>Warning!</h1>
+
+<h4>the script can't support install more than one redis instance right now.(I will handle the problem)</h4>
+
+<h4>Now, you can install/uninstall all redis released version and run the redis server at any port!</h4>
+
+<h1>Contact</h1>
+<a href="mailto:yanghua1127@gmail.com">yanghua1127@gmail.com</a>
+<h3>My blog:</h3><a href="http://blog.csdn.net/yanghua_kobe"></a>
