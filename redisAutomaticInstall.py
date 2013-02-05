@@ -30,16 +30,16 @@ PRE_PROCESSING_EXPRESSION = \
 
 PRE_PROCESSING_PATHS = {
 	'VAR_RUN'				: '/var/run',
-	'USR_LOCAL'				: '/usr/local',
-	'VAR_REDIS'				: 'VAR/redis',
-	'ETC_REDIS'				: 'ETC/redis',
-	'VAR_LOG_REDIS'			: 'VAR_LOG/redis',
-	'INSTALL_HOME_DIR'		: 'USR_LOCAL/redis-{VERSION_NUM}',
+	'USR_LOCAL' 			: '/usr/local',
+	'VAR_REDIS' 			: 'VAR/redis',
+	'ETC_REDIS' 			: 'ETC/redis',
+	'VAR_LOG_REDIS' 		: 'VAR_LOG/redis',
+	'INSTALL_HOME_DIR'  	: 'USR_LOCAL/redis-{VERSION_NUM}',
 	'USR_LOCAL_BIN_REDIS'	: 'USR_LOCAL_BIN/redis-{VERSION_NUM}',
 	'ETC_PROFILE'			: '/etc/profile',
-	'ETC_REDIS'				: '/etc/redis',
-	'ETC_INITD'				: '/etc/init.d',
-	'LOGFILE_PATH'			: '/home/install_log.log'
+	'ETC_REDIS' 			: '/etc/redis',
+	'ETC_INITD' 			: '/etc/init.d',
+	'LOGFILE_PATH'  		: '/home/install_log.log'
 }
 
 PROCESSED_PATHS = {}
