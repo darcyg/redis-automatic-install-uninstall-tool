@@ -82,7 +82,7 @@ CMD_CP_REDIS_CLI            = "sudo cp {INSTALL_HOME_DIR}/src/redis-cli {USR_LOC
 #[target]                   -- operate target content(optional)
 #[file path]                -- operating file path
 PYTHON_CMD_APPEND_PATH      = "file append [] [PATH=$PATH:{USR_LOCAL_BIN_REDIS}/] [{ETC_PROFILE}]"
-CMD_PATH_EFFECTIVE_NOW      = "sudo source {ETC_PROFILE}"
+CMD_PATH_EFFECTIVE_NOW      = "source {ETC_PROFILE}"
 CMD_MKDIR_ETC_REDIS         = "sudo mkdir {ETC_REDIS}"
 CMD_CP_REDISCONF            = "sudo cp {INSTALL_HOME_DIR}/redis.conf {ETC_REDIS}/{PORT_NUM}.conf"
 CMD_CHMOD_REDISCNF_OW       = "sudo chmod o+w {ETC_REDIS}/{PORT_NUM}.conf"
