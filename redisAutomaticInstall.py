@@ -336,7 +336,7 @@ if __name__ == '__main__':
     print("+ 1: the latest released <gcc> is a must!                                             +")
     print("+ 2: the latest released <make> is a must!                                            +")
     print("+ 3: the latest release <tcl> is a must!                                              +")
-    print("+ 4: the <Python3> is a must! and python (3.2.3) is a plus                            +")
+    print("+ 4: the <Python3> is a must! and python (3.3.0) is a plus                            +")
     print("+ And you may provide sereval params (if you choose customize mode) which list as:    +")
     print("+ (1) version num: the version number which you want to download(2.6.9 as a default)  +")
     print("+ (2) port: the port which you wish the redis-server run at(6379 as a default)        +")
