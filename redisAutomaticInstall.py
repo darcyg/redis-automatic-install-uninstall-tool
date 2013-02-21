@@ -82,7 +82,6 @@ CMD_CP_REDIS_CLI            = "sudo cp {INSTALL_HOME_DIR}/src/redis-cli {USR_LOC
 #[target]                   -- operate target content(optional)
 #[file path]                -- operating file path
 PYTHON_CMD_APPEND_PATH      = "file append [] [PATH=$PATH:{USR_LOCAL_BIN_REDIS}/] [{ETC_PROFILE}]"
-CMD_PATH_EFFECTIVE_NOW      = ". {ETC_PROFILE}"
 CMD_MKDIR_ETC_REDIS         = "sudo mkdir {ETC_REDIS}"
 CMD_CP_REDISCONF            = "sudo cp {INSTALL_HOME_DIR}/redis.conf {ETC_REDIS}/{PORT_NUM}.conf"
 CMD_CHMOD_REDISCNF_OW       = "sudo chmod o+w {ETC_REDIS}/{PORT_NUM}.conf"
@@ -112,6 +111,8 @@ PYTHON_CMD_CHANGE_LOGFILE   = "config [logfile] [{VAR_LOG_REDIS}/redis_{PORT_NUM
 PYTHON_CMD_CHANGE_DIR       = "config [dir] [{VAR_REDIS}/{PORT_NUM}] [{ETC_REDIS}/{PORT_NUM}.conf]"
 PYTHON_CMD_CHANGE_APPEND    = "config [appendonly] [yes] [{ETC_REDIS}/{PORT_NUM}.conf]"
 
+CMD_PATH_EFFECTIVE_NOW      = ". {ETC_PROFILE}"
+
 
 #file operate mode (for customized cmd:'file') 
 APPEND_OPERATE              = "append"
@@ -133,7 +134,7 @@ INSTALL_COMMANDS=[
     CMD_CP_REDIS_CLI,
 
     PYTHON_CMD_APPEND_PATH,
-    CMD_PATH_EFFECTIVE_NOW,
+    
     CMD_MKDIR_ETC_REDIS,
     CMD_CP_REDISCONF,
     CMD_CHMOD_REDISCNF_OW,
@@ -154,7 +155,13 @@ INSTALL_COMMANDS=[
     PYTHON_CMD_CHANGE_PORT,
     PYTHON_CMD_CHANGE_LOGFILE,
     PYTHON_CMD_CHANGE_DIR,
-    PYTHON_CMD_CHANGE_APPEND
+    PYTHON_CMD_CHANGE_APPEND,
+
+    #date:2013-02-21
+    #problem the command 'redis-cli' can not be found
+    #        so move it's position
+    #the proflem was found in CentOS 6.3
+    CMD_PATH_EFFECTIVE_NOW
 ]
 
 RUN_REDIS_SERVER_COMMANDS = \
