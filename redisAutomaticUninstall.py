@@ -72,6 +72,13 @@ UNINSTALL_COMMANDS=\
     'sudo rm -r {VAR_LOG_REDIS}/',                     #CMD_RM_VAR_LOG_REDIS
     'sudo rm -r {ETC_REDIS}/{PORT_NUM}.conf',          #CMD_RM_REDIS_CONF
     'sudo rm -r {ETC_INITD}/redis_{PORT_NUM}'          #CMD_RM_REDIS_RUNSCRIPT
+
+    #date:2013-02-21
+    #problem: first install failure, run the uninstall script 
+    #         then run install script again, at last the log reported 
+    #         /var/run/redis_{port}.pid has exist. so here remove it 
+    #         the problem was found in CentOS 6.3
+    'sudo rm -r {VAR_RUN}/redis_{PORT_NUM}.pid'        #CMD_RM_VAR_RUN_REDIS_{PORTNUM}.pid
 ]
 
 #================================Methods=====================================#
