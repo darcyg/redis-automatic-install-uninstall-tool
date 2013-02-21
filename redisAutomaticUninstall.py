@@ -71,7 +71,7 @@ UNINSTALL_COMMANDS=\
     'sudo rm -r {VAR_REDIS}/{PORT_NUM}',               #CMD_RM_VAR_REDIS_PORT
     'sudo rm -r {VAR_LOG_REDIS}/',                     #CMD_RM_VAR_LOG_REDIS
     'sudo rm -r {ETC_REDIS}/{PORT_NUM}.conf',          #CMD_RM_REDIS_CONF
-    'sudo rm -r {ETC_INITD}/redis_{PORT_NUM}'          #CMD_RM_REDIS_RUNSCRIPT
+    'sudo rm -r {ETC_INITD}/redis_{PORT_NUM}',         #CMD_RM_REDIS_RUNSCRIPT
 
     #date:2013-02-21
     #problem: first install failure, run the uninstall script 
