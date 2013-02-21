@@ -61,6 +61,7 @@ MODE_READWRITE              = "rw"
 CMD_CHMOD_USR_LOCAL_W       = "sudo chmod o+w {USR_LOCAL}"
 CMD_CHMOD_USR_LOCAL_X       = "sudo chmod o+x {USR_LOCAL}"
 CMD_CHMOD_ETC_PROFILE       = "sudo chmod o+w {ETC_PROFILE}"
+CMD_CHMOD_EXE_ETC_PROFILE   = "sudo chmod o+x {ETC_PROFILE}"
 CMD_WGET_REDIS_SOURCE       = "wget -P {USR_LOCAL} http://redis.googlecode.com/files/redis-{VERSION_NUM}.tar.gz"
 CMD_CHMOD_TAREDFILE_UX      = "sudo chmod u+x {USR_LOCAL}/redis-{VERSION_NUM}.tar.gz"
 CMD_CREATE_INSTALLDIR       = "sudo mkdir {INSTALL_HOME_DIR}/"
@@ -123,6 +124,7 @@ INSTALL_COMMANDS=[
     CMD_CHMOD_USR_LOCAL_W,
     CMD_CHMOD_USR_LOCAL_X,
     CMD_CHMOD_ETC_PROFILE,
+    CMD_CHMOD_EXE_ETC_PROFILE,      #add the executable permission of the etc_profile for others
     CMD_WGET_REDIS_SOURCE,
     CMD_CHMOD_TAREDFILE_UX,
     CMD_CREATE_INSTALLDIR,
