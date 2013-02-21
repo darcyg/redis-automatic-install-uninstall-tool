@@ -162,7 +162,7 @@ INSTALL_COMMANDS=[
     #date:2013-02-21
     #problem the command 'redis-cli' can not be found
     #        so move it's position
-    #the proflem was found in CentOS 6.3
+    #        the proflem was found in CentOS 6.3
     CMD_PATH_EFFECTIVE_NOW
 ]
 
@@ -385,6 +385,7 @@ if __name__ == '__main__':
         notice("the install script has run. Everything has log at path: %s" % PRE_PROCESSING_PATHS['LOGFILE_PATH'])
 
         #run
+        warn('Notice:you may need to execute the command:. /ect/profile to make the system Environment variables effective right now.(Specifically in centOS)')
         runInstanceOrNot = input("would you like to run the redis server now? Enter (y/n) to continue:  ")
         if runInstanceOrNot == 'y':
             runInstance()
